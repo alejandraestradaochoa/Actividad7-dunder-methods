@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 from typing import List 
 
-@dataclass(eq=True, frozen=True)
+@dataclass
 class Elemento:
     nombre = str
 
+    def __eq__(self, other):
+        return self.nombre == other.nombre
 class Conjunto:
     contador = 0
 
