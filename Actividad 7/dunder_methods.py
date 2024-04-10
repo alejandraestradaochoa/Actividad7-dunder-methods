@@ -37,7 +37,7 @@ class Conjunto:
 #(__add__). Este método especial nos permite definir 
 #el comportamiento de la suma entre dos objetos de la clase.
     def __add__(self, otro_conjunto):
-        nuevo_conjunto = Conjunto(f"{self.nombree} UNIDO {otro_conjunto.nombre}")
+        nuevo_conjunto = Conjunto(f"{self.nombre} UNIDO {otro_conjunto.nombre}")
         for elemento in self.elementos:
             nuevo_conjunto.agregar_elemento(elemento)
         for elemento in otro_conjunto.elementos:
